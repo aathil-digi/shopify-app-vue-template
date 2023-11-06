@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "my-node-vue-app"
+client_id = "a86819638a03b0c42fcab238d7e86495"
+application_url = "https://physician-inquiry-scripting-idle.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://physician-inquiry-scripting-idle.trycloudflare.com/auth/callback",
+  "https://physician-inquiry-scripting-idle.trycloudflare.com/auth/shopify/callback",
+  "https://physician-inquiry-scripting-idle.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "berserka-online.myshopify.com"

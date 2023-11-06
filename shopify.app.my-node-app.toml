@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "my-node-app"
+client_id = "7d7901baf3267190c8a8a5d2a5121d95"
+application_url = "https://advert-paragraph-julie-infants.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://advert-paragraph-julie-infants.trycloudflare.com/auth/callback",
+  "https://advert-paragraph-julie-infants.trycloudflare.com/auth/shopify/callback",
+  "https://advert-paragraph-julie-infants.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "app-sync.myshopify.com"
